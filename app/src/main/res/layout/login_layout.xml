@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:orientation="vertical"
-    android:paddingHorizontal="50dp"
-    android:fitsSystemWindows="true">
+    android:paddingHorizontal="50dp">
 
     <TextView
         android:layout_width="match_parent"
@@ -35,16 +35,16 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukan Kata Sandi"
         android:layout_marginTop="12dp"
+        android:hint="Masukan Kata Sandi"
         android:inputType="textPassword" />
 
     <Button
+        style="@style/button_OK_Biru"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OK"
         android:layout_marginTop="32dp"
-        style="@style/button_OK_Biru" />
+        android:text="OK" />
 
     <Button
         android:layout_width="match_parent"
