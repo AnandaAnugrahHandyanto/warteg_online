@@ -4,21 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="15dp"
+    android:paddingHorizontal="80dp"
     android:fitsSystemWindows="true">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:textSize="30dp"
+        android:textSize="32sp"
         android:textAlignment="center"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="40dp"
+        android:textStyle="bold" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
         android:src="@drawable/warteg_online"
         tools:srcCompat="@drawable/warteg_online" />
 
@@ -26,20 +29,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukan Username"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:inputType="text" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukan Kata Sandi"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:inputType="textPassword" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="OK"
+        android:layout_marginTop="32dp"
         style="@style/button_OK_Biru" />
 
     <Button
@@ -48,8 +52,8 @@
         android:text="CANCEL"
         android:backgroundTint="#FF0000"
         android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
-        android:minHeight="40dp" />
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:minHeight="48dp" />
 
 </LinearLayout>
