@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.AnandaAnugrahHandyanto" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.AnandaAnugrahHandyanto" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#2F56C8</item>
+        <item name="colorPrimaryVariant">#1E3A8A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#1FDFF1</item>
+        <item name="colorSecondaryVariant">#0EA5E9</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+    </style>
+
 </resources>

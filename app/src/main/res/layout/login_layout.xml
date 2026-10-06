@@ -23,30 +23,45 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
         android:src="@drawable/warteg_online"
-        tools:srcCompat="@drawable/warteg_online" />
+        tools:srcCompat="@drawable/warteg_online"
+        tools:ignore="ContentDescription" />
 
     <EditText
+        android:id="@+id/et_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:hint="Masukan Username"
-        android:inputType="text" />
+        android:inputType="text"
+        android:maxWidth="488dp"
+        android:minHeight="48dp" />
 
     <EditText
+        android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="12dp"
         android:hint="Masukan Kata Sandi"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:maxWidth="488dp"
+        android:minHeight="48dp" />
 
     <Button
+        android:id="@+id/dashboard"
         style="@style/button_OK_Biru"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="32dp"
-        android:text="OK" />
+        android:maxWidth="488dp"
+        android:minHeight="48dp"
+        android:text="OK"
+        tools:ignore="TextSizeCheck" />
 
     <Button
+        android:id="@+id/btn_cancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -54,6 +69,19 @@
         android:minHeight="48dp"
         android:text="CANCEL"
         android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:maxWidth="488dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/lupaPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lupa Password?"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:focusable="true" />
 
 </LinearLayout>
