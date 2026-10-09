@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:padding="20dp"
+    android:background="@android:color/white">
 
     <TextView
+        android:id="@+id/label_judul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INI ADALAH FRAGMENT DUA"
-        android:textAlignment="center"
-        android:textSize="40sp"
-        android:layout_marginTop="50dp" />
+        android:text="IMPLEMENTASI RELATIVE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_gray"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/label_definisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout merupakan layout yang mengatur tata letak komponen atau UI aplikasi android dengan cara relative (bebas) tidak hanya vertical atau horizontal seperti pada Linear Layout"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray"
+        android:gravity="center"
+        android:layout_below="@id/label_judul"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btn_ok_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:backgroundTint="@color/blue_button"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_below="@id/label_definisi"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+        android:minWidth="120dp" />
+
+    <Button
+        android:id="@+id/btn_cancel_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:backgroundTint="@color/red_cancel"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_below="@id/label_definisi"
+        android:layout_toEndOf="@id/btn_ok_relative"
+        android:minWidth="120dp" />
+
+</RelativeLayout>
