@@ -19,7 +19,7 @@ class LupaPasswordActivity : AppCompatActivity() {
         // Intent Implisit: Buka URL its.ac.id
         val btnBantuanBrowser = findViewById<Button>(R.id.btn_bantuan_browser)
         btnBantuanBrowser.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://unpam.ac.id"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://youtube.com"))
             startActivity(intent)
         }
 
